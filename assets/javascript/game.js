@@ -1,7 +1,12 @@
 // computer makes choice out of word out of bank -->
 var rocks = ["Gold", "Opal", "Diamond", "Jade", "Quartz", "Sapphire"]
+var computerSelection = rocks[Math.floor(Math.random()*rocks.length)];
+console.log (computerSelection);
+//use html to display underscore in place of string
+
+
 // math.random for array of possible words in bank 
-function word (math.random(rocks.length-1))
+// function word(Math.random(rocks.length-1))
 
 // computer displays underscores for word _ _ _ _ 
 
