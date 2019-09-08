@@ -1,14 +1,17 @@
-// computer makes choice out of word out of bank -->
-var rocks = ["Gold", "Opal", "Diamond", "Jade", "Quartz", "Sapphire"]
-var computerSelection = rocks[Math.floor(Math.random()*rocks.length)];
-console.log (computerSelection);
-//use html to display underscore in place of string
+var rocks = ["Gold", "Opal", "Diamond", "Jade", "Quartz", "Sapphire"];
+var word = rocks[Math.floor(Math.random()*rocks.length)];
+console.log (word);
+
+var answerArray = [];
+for (var i = 0; i < word.length; i++) {
+    answerArray[i] = "_";
+};
+console.log(answerArray);
 
 
-// math.random for array of possible words in bank 
-// function word(Math.random(rocks.length-1))
 
-// computer displays underscores for word _ _ _ _ 
+
+//create a variable to hold remaining letters to be guessed
 
 
 // computer senses what character is being pressed by human displays error message if alphabet character not choice
@@ -20,8 +23,4 @@ console.log (computerSelection);
 // conditional loop ==== on key press 
 
 // plays song or sound when game over
-
-// dom model
-var exampleDiv = document.getElementById("example");
-exampleDiv.textContent = "rocks"
 
